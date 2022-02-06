@@ -131,7 +131,88 @@ a {
   text-decoration: underline;
 }
 
+/* wrapper for side navbar and component display section  */
+.wrapper {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  
+}
+
+.component-container {
+  display: flex;
+}
+
+ /* Side Navbar */
+
+ 
+
+.sidenav {
+  flex-basis: 20%;
+  padding: 0.8rem;
+  margin-top: 0.8rem;
+}
+.sidenav-heading {
+  padding-bottom: 0.8rem;
+}
+
+.sidenav li {
+  list-style-type: none;
+  padding: 0.8rem;
+
+  margin-bottom: 0.8rem;
+}
+
+.sidenav li a:hover {
+  color: var(--lynx-white-color);
+  background-color: var(--secondary-color);
+}
+
+.active {
+  color: var(--secondary-color);
+  font-weight: var(--bold-font);
+}
+
+ /* component display section  */
+
+.comp-display-section {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 0.8rem;
+  padding: 0 0.8rem;
+ 
+}
+.comp-heading {
+  padding-bottom: 2.4rem;
+}
+.comp-heading-desc {
+  padding-bottom: 2.4rem;
+  color: var(--sub-text-color);
+}
+
+.component-code {
+  background-color: var(--lynx-white-color);
+  padding: 1rem;
+  margin: 1rem 0 4rem 0;
+  border: 1px solid var(--lynx-gray-color);
+}
+
+.highlight {
+  background-color: var(--lynx-white-color);
+  padding: 0 0.8rem;
+  opacity: 0.9;
+}
+
 /* media queries */
+
+@media (max-width: 768px) {
+  .sidenav {
+    display: none;
+  }
+  .comp-display-section {
+    width: 95%;
+  }
+}
 
 @media (max-width: 480px) {
   .header {
@@ -151,6 +232,10 @@ a {
 
   .header li {
     padding: 0rem;
+  }
+  .wrapper {
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
