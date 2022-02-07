@@ -1,0 +1,27 @@
+.badge{
+    position: relative;
+    cursor: pointer;
+    margin: 1rem;
+    font-size: 3rem;
+    
+}
+.badge-count{
+    position: absolute;
+    background-color: var(--danger-color);
+    color: #fff;
+    border-radius: 50%;
+    top: 0;
+    right: 0.4rem;
+    font-size: 1.2rem;
+    width: 25%;
+    height: 21%;
+    font-weight: var(--semibold-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon .badge-count {
+    top: -0.4rem;
+    right: -1rem;
+    padding: 0.8rem ;
+}
