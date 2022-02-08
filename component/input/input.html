@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/component/input/input.css" />
+
+    <title>PineUI | Input</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <figure class="logo-container">
+            <a href="../index.html">
+                <img src="/assets/logo.png" alt="logo" />
+            </a>
+        </figure>
+        <div class="header-links">
+            <ul class="lg-text">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/components/alert/alert.html">Docs</a></li>
+                <li><a href="https://github.com/prajapati-priyanka">Github</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="component-container wrapper">
+        <aside class="sidenav">
+            <h3 class="sidenav-heading">Components</h3>
+            <ul>
+                <li><a class="md-text" href="../alert/alert.html">Alert</a></li>
+                <li><a class="md-text" href="../avatar/avatar.html">Avatar</a></li>
+                <li><a class="md-text" href="../badge/badge.html">Badge</a></li>
+                <li><a class="md-text" href="../alert/alert.html">Button</a></li>
+                <li><a class="md-text" href="../alert/alert.html">Card</a></li>
+                <li><a class="md-text" href="../image/image.html">Image</a></li>
+                <li><a class="active md-text" href="../input/input.html">Input</a></li>
+                <li><a class="md-text" href="../alert/alert.html">Typography</a></li>
+            </ul>
+        </aside>
+        <section class="comp-display-section">
+            <article class="comp-desc">
+                <h1 class="comp-heading">Input</h1>
+                <p class="comp-heading-desc lg-text">
+                    The input tag specifies an input field where the user can enter data. It is the most important form
+                    element.The input element can be displayed in several ways, depending on the type attribute.
+                </p>
+            </article>
+            <article class="comp-desc">
+                <h2 class="comp-heading">Text Box</h2>
+                <p class="comp-heading-desc lg-text">
+                    Example of different input types are as follows:
+                    <span class="highlight">type="text"</span> (default value),
+                    <span class="highlight">type="number"</span>,
+                    <span class="highlight">type="password"</span>,
+                    <span class="highlight">type="date"</span>
+                </p>
+                <div class="component-code lg-text">
+                    <form class="input-container">
+                        <input type="text" placeholder="Basic text box">
+                        <label for="name" class="md-text">Age:</label>
+                        <input type="number" id="name" placeholder="Enter Age">
+                        <label for="pass" class="md-text">Password:</label>
+                        <input type="password" id="pass" placeholder="Enter Password">
+                        <label for="birth-date" class="md-text">Birthday:</label>
+                        <input type="date" id="birth-date" placeholder="Enter Birth Date">
+                    </form>
+                    <iframe src="https://www.thiscodeworks.com/embed/6200302a4dd44f0015f3ccb7"
+                        style="width: 100%; height: 203px;" frameborder="0"></iframe>
+                </div>
+            </article>
+            <article class="comp-desc">
+                <h2 class="comp-heading"> Input Validation</h2>
+                <p class="comp-heading-desc lg-text">
+                    Input validation is performed to ensure only properly formed data is entering the workflow in an
+                    information system.
+                    There are 3 types of inputs available apart from the default one:
+                    <span class="highlight">error</span>,
+                    <span class="highlight">warn</span>,
+                    <span class="highlight">success</span>
+
+                </p>
+                <div class="component-code lg-text">
+                    <form class="input-container">
+                        <label for="name" class="md-text">Name:</label>
+                        <input class="input-error" type="text" id="name" placeholder="Enter Name" required> <span
+                            class="msg msg-error sm-text">Please enter your name</span>
+                        <label for="pass" class="md-text">Password:</label>
+                        <input class="input-warn" type="password" id="pass" placeholder="Enter Password"
+                            minlength="6"><span class="msg msg-warn sm-text">password must be greater than 6
+                            character</span>
+                        <label for="pass" class="md-text">Password:</label>
+                        <input class="input-success" type="password" id="pass" placeholder="Enter password"
+                            minlength="6"><span class="msg msg-success sm-text">This is success stage for
+                            validation</span>
+                    </form>
+
+                    <iframe src="https://www.thiscodeworks.com/embed/6200310a4dd44f0015f3ccb9"
+                        style="width: 100%; height: 203px;" frameborder="0"></iframe>
+                </div>
+            </article>
+        </section>
+    </main>
+
+</body>
+
+</html>
