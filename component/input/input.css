@@ -1,0 +1,33 @@
+.input-container {
+  padding: 1rem;
+}
+input {
+  display: block;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  width: 25%;
+  margin: 0.5rem 0;
+}
+.input-error {
+  border: 1px solid var(--danger-color);
+}
+.input-warn {
+  border: 1px solid var(--warning-color);
+}
+.input-success {
+  border: 1px solid var(--success-color);
+}
+.msg {
+  display: block;
+  margin: 0.8rem 0;
+}
+.msg-error {
+  color: var(--danger-color);
+}
+.msg-warn {
+  color: var(--warning-color);
+}
+.msg-success {
+  color: var(--success-color);
+}
