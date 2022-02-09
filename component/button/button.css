@@ -10,25 +10,25 @@
     font-weight: 500;
   }
 
-  .btn-primary {
+.btn-primary {
     background-color: var(--primary-color);
   }
   
-  .btn-secondary {
+.btn-secondary {
     background-color: var(--secondary-color);
   }
   
-  .btn-danger {
+.btn-danger {
     background-color: var(--danger-color);
   }
 
-  .btn-primary:hover,
-  .btn-secondary:hover,
-  .btn-danger:hover {
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-danger:hover {
     opacity: 0.9;
   }
   
-  .btn-outline-primary {
+.btn-outline-primary {
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
   }
@@ -91,7 +91,7 @@
     cursor: pointer;
     transition: 0.2s ease;
   }
-  
+
   .floating-btn:active {
     background-color: var(--secondary-color);
   }
