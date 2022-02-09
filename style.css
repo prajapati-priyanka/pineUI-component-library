@@ -165,7 +165,7 @@ a {
 
 .sidenav li a:hover {
   color: var(--lynx-white-color);
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .active {
