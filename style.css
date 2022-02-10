@@ -16,6 +16,7 @@ html {
   --primary-color: #097845;
   --secondary-color: #e8727c;
   --bg-color: #f8fafc;
+  --dark-bg-color: #333;
   --success-color: #28a745;
   --danger-color: #dc3545;
   --info-color: #17a2b8;
@@ -24,7 +25,8 @@ html {
   --link-color: #4b5563;
   --lynx-white-color: #f7f7f7;
   --lynx-gray-color: #c5c5c5;
-  --action-color: #3b82f6;
+  --action-color: #bb86fc;
+  --action-bg-clor:#4d2f70;
   --black-color: #282828;
   --white-color:#ffff;
   --gray-color:#6c757d;
