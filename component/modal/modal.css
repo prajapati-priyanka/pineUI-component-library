@@ -1,11 +1,11 @@
 .modal-container {
   width: 30vw;
   background-color: var(--white-color);
-  box-shadow: 1px 1px 2px 1px rgba(24, 24, 185, 0.25),
-    -1px -1px 2px 1px rgba(24, 24, 185, 0.25);
+  box-shadow: 1px 1px 2px 1px rgba(24, 24, 185, 0.25), -1px -1px 2px 1px rgba(24, 24, 185, 0.25);
   padding: 1.6rem;
   margin: 2rem auto;
 }
+
 .modal-title {
   padding: 0.5rem 0 1rem 0;
   font-weight: var(--semibold-font);
