@@ -14,7 +14,7 @@ html {
 /* colors */
 :root {
   --primary-color: #097845;
-  --secondary-color: #09780e;
+  --secondary-color: #e8727c;
   --bg-color: #f8fafc;
   --success-color: #28a745;
   --danger-color: #dc3545;
@@ -165,11 +165,11 @@ a {
 
 .sidenav li a:hover {
   color: var(--lynx-white-color);
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .active {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-weight: var(--bold-font);
 }
 
