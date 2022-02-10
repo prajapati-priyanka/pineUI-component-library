@@ -1,13 +1,12 @@
 .btn {
-    display: block;
-    margin: 0.5rem 1rem;
-    border-radius: 0.6rem;
-    border: none;
-    cursor: pointer;
-    color: var(--lynx-white-color);
-    padding: 0.9rem 1rem;
-    min-width: 13rem;
-    font-weight: var(--semibold-font);
+  border-radius: 0.6rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--lynx-white-color);
+  padding: 1rem;
+  
   }
 
 .btn-primary {
