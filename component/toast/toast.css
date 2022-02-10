@@ -3,9 +3,9 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #333;
+  background-color: var(--dark-bg-color);
   border-radius: 0.6rem;
-  color: #ffffffde;
+  color: var(--lynx-white-color);
   margin: 2rem auto;
   padding: 1rem;
   position: relative;
@@ -16,7 +16,7 @@
 
 .retry-btn {
   padding: 0.4rem;
-  color: #bb86fc;
+  color: var(--action-color);
   cursor: pointer;
   background-color: transparent;
   outline: none;
@@ -25,11 +25,11 @@
 }
 
 .retry-btn:hover {
-  background-color: #4d2f7030;
+  background-color: var(--gray-color);
   border-radius: 0.3rem;
 }
 .retry-btn:active {
-  background-color: #4d2f70;
+  background-color: var(--action-bg-color);
   border-radius: 0.3rem;
 }
 
@@ -38,7 +38,7 @@
   padding: 0 0.6rem;
 }
 .toast-dismiss:hover {
-  background-color: var(--lynx-gray-color);
+  background-color: var(--gray-color);
   border-radius: 50%;
   color: var(--black-color);
 }
