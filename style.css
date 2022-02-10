@@ -26,7 +26,9 @@ html {
   --lynx-gray-color: #c5c5c5;
   --action-color: #3b82f6;
   --black-color: #282828;
+  --white-color:#ffff;
   --gray-color:#6c757d;
+  --text-muted-color: #6c757d;
   --red:red;
   --green:green;
 
@@ -86,6 +88,19 @@ h5 {
 .x-sm-text {
   font-size: 0.5rem;
   line-height: 1rem;
+}
+
+.text-muted{
+  color: var(--text-muted-color);
+}
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
 }
 
 body {
