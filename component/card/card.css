@@ -1,0 +1,267 @@
+/* Basic Card css starts  */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  height: max-content;
+  border-radius: 8px;
+  background: var(--white-color);
+  border: 1px solid var(--lynx-gray-color);
+  margin: 0 auto;
+}
+
+.card-header {
+  position: relative;
+  height: 27rem;
+}
+
+.card-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 0.2rem 1.5rem;
+  margin: 1rem 0;
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card-title {
+  color: var(--black-color);
+  padding: 0.8rem 0 0.5rem 0;
+  font-weight: var(--semibold-font);
+}
+.card-subtitle {
+  font-weight: var(--regular-font);
+  color: var(--link-color);
+}
+.card-price {
+  margin: 0.8rem 0;
+  padding: 0.8rem 0;
+}
+
+.card-price .price-after-discount {
+  font-weight: var(--bold-font);
+}
+
+.card-price .price-before-discount {
+  font-weight: var(--regular-font);
+
+  text-decoration: line-through;
+  color: var(--link-color);
+  padding-left: 0.4rem;
+}
+
+.card-price .discount {
+  font-weight: var(--regular-font);
+  color: var(--red);
+  padding-left: 0.5rem;
+}
+/* Basic Card css ends  */
+
+/* card with shadow  */
+.card-shadow {
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3), 0 2px 16px rgba(0, 0, 0, 0.22);
+}
+
+/* e-commerce card starts*/
+.ecommerce-card {
+  position: relative;
+}
+
+.card-floating-icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 0.8rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.card-floating-icon i {
+  color: var(--lynx-white-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.card-floating-icon i:hover {
+  color: var(--red);
+}
+/* e-commerce card ends*/
+
+/* card with badge starts */
+.card-with-badge {
+  position: relative;
+}
+
+.card-with-badge .card-badge {
+  position: absolute;
+  top: 1.5rem;
+  left: -0.1rem;
+  font-weight: var(--regular-font);
+  padding: 0.4rem 0.5rem;
+  background-color: var(--green);
+  color: var(--white-color);
+}
+/* card with badge ends */
+
+/* card with text overlay starts */
+.card-with-text-overlay {
+  position: relative;
+  opacity: 0.3;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-weight: var(--semibold-font);
+  color: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* card with text overlay ends */
+
+/* text only cards starts  */
+.text-only-card {
+  padding: 1rem;
+  display: inline-block;
+  margin-left: 2rem;
+}
+.text-only-card .card-subtitle {
+  font-weight: var(--regular-font);
+  color: var(--gray-color);
+  padding-top: 0.4rem;
+}
+
+.text-only-card .card-text {
+  font-weight: var(--regular-font);
+  color: var(--black-color);
+  padding-top: 1rem;
+  line-height: 1.5;
+}
+/* text only cards starts  */
+
+/* card with dismiss starts */
+.card-with-dismiss .card-header {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+
+.card-with-dismiss .close-icon {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.close-icon i {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close-icon i:hover {
+  color: var(--gray-color);
+}
+/* card with dismiss ends */
+
+/* horizontal card starts */
+.card-horizontal {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 600px;
+}
+.card-horizontal .card-header {
+  width: 40%;
+  height: 27rem;
+}
+
+.card-horizontal .card-body {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 1.6rem;
+}
+
+.card-horizontal .card-title {
+  font-weight: var(--semibold-font);
+}
+
+.card-horizontal .card-subtitle {
+  font-weight: var(--regular-font);
+  color: var(--gray-color);
+}
+
+.card-horizontal .card-header .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.card-horizontal .card-body .card-btn {
+  margin-top: 10px;
+}
+
+.card-horizontal .card-body .card-btn button {
+  width: 100%;
+  margin-top: 1rem;
+}
+/* horizontal card ends */
+
+
+/* media queries */
+@media only screen and (max-width: 600px) {
+  
+    .card-horizontal {
+    display: flex;
+    flex-direction: column;
+    width: 37.5rem;
+  }
+  
+  .card-horizontal .card-header {
+    width: 100%;
+    height: 33rem;
+  }
+
+  .card-horizontal .card-body {
+    padding: 0.2rem 1.5rem;
+    margin: 1rem 0;
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .card-horizontal .card-body .card-btn button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .card-horizontal .card-header .card-img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 0px 0px 8px;
+  }
+  .text-only-card {
+    margin-top: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .card-horizontal,
+  .card {
+    width: 20rem;
+  }
+  .text-only-card {
+    display: block;
+    margin: 0.5rem 0 0 0;
+  }
+}

@@ -26,6 +26,9 @@ html {
   --lynx-gray-color: #c5c5c5;
   --action-color: #3b82f6;
   --black-color: #282828;
+  --gray-color:#6c757d;
+  --red:red;
+  --green:green;
 
   /* font-weight */
   --black-font: 900;
