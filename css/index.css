@@ -1,0 +1,16 @@
+.main-content {
+  width: 60%;
+  margin: 12rem auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.button-container {
+  margin-top: 0.8rem;
+  padding: 1.6rem 0;
+}
+
+.button-container button{
+  padding: 1rem 2rem;
+}
+
