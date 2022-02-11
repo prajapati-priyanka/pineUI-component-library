@@ -7,6 +7,10 @@
 
 .button-container {
   margin-top: 0.8rem;
-  padding: 0.8rem 0;
+  padding: 1.6rem 0;
+}
+
+.button-container button{
+  padding: 1rem 2rem;
 }
 
