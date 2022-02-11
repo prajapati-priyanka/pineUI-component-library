@@ -10,26 +10,3 @@
   padding: 0.8rem 0;
 }
 
-.btn {
-  padding: 1rem;
-  margin: 0.5rem;
-  border-radius: 0.6rem;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  width: auto;
-  color: var(--lynx-white-color);
-}
-.btn-primary {
-  background-color: var(--primary-color);
-}
-
-.btn-outline-primary {
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
-}
-
-.btn-install:hover {
-    background-color: var(--primary-color);
-    color: var(--lynx-white-color);
-  }
