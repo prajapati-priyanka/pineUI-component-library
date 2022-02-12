@@ -4,3 +4,63 @@
 .typography-spacing {
   margin: 0.8rem 0;
 }
+
+/* Typography */
+h1 {
+  font-size: 4.8rem;
+  line-height: 6.4rem;
+  font-weight: 900;
+}
+h2 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+}
+h5 {
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+  font-weight: 300;
+}
+.x-lg-text {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+.lg-text {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+.md-text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.sm-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.x-sm-text {
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+
+.text-muted{
+  color: var(--text-muted-color);
+}
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
