@@ -3,28 +3,27 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 30rem;
-  height: max-content;
+  width: 26rem;
+  height: auto;
   border-radius: 8px;
   background: var(--white-color);
-  border: 1px solid var(--lynx-gray-color);
   margin: 0 auto;
+  position: relative;
 }
-
 .card-header {
   position: relative;
-  height: 27rem;
+  width: 100%;
 }
 
 .card-header img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
+  border-radius: 8px 8px 0 0;
 }
 
 .card-body {
-  padding: 0.2rem 1.5rem;
-  margin: 1rem 0;
+  padding: 0.5rem 0.8rem;
   display: inline-flex;
   flex-direction: column;
   width: 100%;
@@ -32,7 +31,7 @@
 
 .card-title {
   color: var(--black-color);
-  padding: 0.8rem 0 0.5rem 0;
+  padding: 0.5rem 0;
   font-weight: var(--semibold-font);
 }
 .card-subtitle {
@@ -40,8 +39,8 @@
   color: var(--link-color);
 }
 .card-price {
-  margin: 0.8rem 0;
-  padding: 0.8rem 0;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
 }
 
 .card-price .price-after-discount {
@@ -50,7 +49,6 @@
 
 .card-price .price-before-discount {
   font-weight: var(--regular-font);
-
   text-decoration: line-through;
   color: var(--link-color);
   padding-left: 0.4rem;
@@ -61,11 +59,12 @@
   color: var(--red);
   padding-left: 0.5rem;
 }
+
 /* Basic Card css ends  */
 
 /* card with shadow  */
 .card-shadow {
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3), 0 2px 16px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* e-commerce card starts*/
@@ -75,20 +74,21 @@
 
 .card-floating-icon {
   position: absolute;
-  top: 1.5rem;
-  right: 0.8rem;
-  background-color: transparent;
+  top: 15px;
+  right: 8px;
+  background-color: white;
   border: none;
   outline: none;
+  padding: 0.4rem 0.4rem 0rem 0.4rem;
+  border-radius: 50%;
 }
 
 .card-floating-icon i {
   color: var(--lynx-white-color);
   cursor: pointer;
   transition: all 0.3s ease;
-}
-.card-floating-icon i:hover {
   color: var(--red);
+  font-size: 2rem;
 }
 /* e-commerce card ends*/
 
@@ -99,8 +99,8 @@
 
 .card-with-badge .card-badge {
   position: absolute;
-  top: 1.5rem;
-  left: -0.1rem;
+  top: 15px;
+  left: -1px;
   font-weight: var(--regular-font);
   padding: 0.4rem 0.5rem;
   background-color: var(--green);
@@ -132,12 +132,12 @@
 .text-only-card {
   padding: 1rem;
   display: inline-block;
-  margin-left: 2rem;
+  margin-right: 1rem;
 }
 .text-only-card .card-subtitle {
   font-weight: var(--regular-font);
   color: var(--gray-color);
-  padding-top: 0.4rem;
+  padding-top: 4px;
 }
 
 .text-only-card .card-text {
@@ -176,92 +176,77 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
+  padding: 1rem;
 }
 .card-horizontal .card-header {
   width: 40%;
-  height: 27rem;
 }
 
 .card-horizontal .card-body {
   display: flex;
   flex-direction: column;
   width: 60%;
-  padding: 1.6rem;
-}
-
-.card-horizontal .card-title {
-  font-weight: var(--semibold-font);
-}
-
-.card-horizontal .card-subtitle {
-  font-weight: var(--regular-font);
-  color: var(--gray-color);
+  padding-left: 1.5rem;
 }
 
 .card-horizontal .card-header .card-img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
-  border-radius: 8px 0px 0px 8px;
+  border-radius: 0;
 }
 
 .card-horizontal .card-body .card-btn {
   margin-top: 10px;
 }
-
 .card-horizontal .card-body .card-btn button {
   width: 100%;
   margin-top: 1rem;
 }
 /* horizontal card ends */
 
+/* Vertical Card */
 
+.vertical-card {
+  width: 21rem;
+}
 /* media queries */
-@media only screen and (max-width: 600px) {
-  
-    .card-horizontal {
-    display: flex;
-    flex-direction: column;
-    width: 37.5rem;
-  }
-  
-  .card-horizontal .card-header {
-    width: 100%;
-    height: 33rem;
-  }
 
-  .card-horizontal .card-body {
-    padding: 0.2rem 1.5rem;
-    margin: 1rem 0;
-    display: inline-flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .card-horizontal .card-body .card-btn button {
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  .card-horizontal .card-header .card-img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px 0px 0px 8px;
-  }
+@media only screen and (max-width: 920px) {
   .text-only-card {
-    margin-top: 0.5rem;
+    display: block;
+    margin-top: 1rem;
   }
 }
 
-@media only screen and (max-width: 440px) {
-  .card-horizontal,
-  .card {
-    width: 20rem;
+@media only screen and (max-width: 850px) {
+  .card-horizontal {
+    width: 40rem;
   }
-  .text-only-card {
-    display: block;
-    margin: 0.5rem 0 0 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-horizontal {
+    width: 37.5rem;
+  }
+
+  .card-horizontal .card-body {
+    padding: 0.5rem 0.8rem;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .card-horizontal {
+    width: 30rem;
+  }
+  .text-overlay {
+    top: -6rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .card,
+  .card-horizontal {
+    width: 220px;
   }
 }
