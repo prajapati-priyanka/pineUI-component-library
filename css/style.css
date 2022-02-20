@@ -226,6 +226,7 @@ iframe {
 .page-bottom-nav {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 1.6rem;
 }
 
 .footer-icon {
