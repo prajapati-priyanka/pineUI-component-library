@@ -1,6 +1,6 @@
 # PINEUI
 
-A lightweight CSS Library with pre-definesd classes that helps to develop fast and powerful websites.
+A lightweight CSS Library with pre-defined classes that helps to develop fast and powerful websites.
 That can be easily customized further at your own choice.
 
 # Live Preview
