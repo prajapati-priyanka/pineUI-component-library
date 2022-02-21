@@ -1,8 +1,12 @@
 .main-content {
   width: 60%;
-  margin: 12rem auto;
-  text-align: center;
+  margin: 6rem auto;
   padding: 1rem;
+}
+
+.main-content .main-heading{
+  padding: 0.8rem;
+  color: var(--primary-color);
 }
 
 .button-container {
