@@ -138,14 +138,17 @@ a {
 .header-links {
   margin-right: 5rem;
 }
-.header-links li {
+.header-links ul {
   list-style: none;
-  display: inline-block;
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
   padding: 0.8rem;
-
   cursor: pointer;
   border-radius: 0.5rem;
 }
+
 .header-links li a:hover {
   color: var(--primary-color);
   text-decoration: underline;
