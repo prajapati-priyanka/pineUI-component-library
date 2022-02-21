@@ -6,7 +6,7 @@ input {
   padding: 0.8rem 1rem;
   border-radius: 0.5rem;
   border: none;
-  width: 25%;
+  width: 50%;
   margin: 0.5rem 0;
 }
 .input-error {
@@ -31,3 +31,10 @@ input {
 .msg-success {
   color: var(--success-color);
 }
+
+@media screen and (max-width: 400px) {
+  input{
+      width: 100%;
+    }
+}
+
