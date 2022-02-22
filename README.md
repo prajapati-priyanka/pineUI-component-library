@@ -44,7 +44,7 @@ To start using the components in your project copy the below `<link>` tag  into 
 ## Things I want to improve
 - Night Mode.
 - More utility classes.
-- Mobile verion.
+- Mobile version.
 
 ## Connect with me
 - [Linkedin](https://www.linkedin.com/in/priyanka-prajapati-853098146/)
