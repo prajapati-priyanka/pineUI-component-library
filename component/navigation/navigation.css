@@ -1,0 +1,24 @@
+.header-container{
+    background-color: var(--lynx-gray-color);
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+.header-search{
+    margin-left: auto;
+    min-width: 20rem;
+    width: 40%;
+}
+.nav-container{
+  margin-left: auto;
+}
+.hamburger-menu{
+    display: none;
+}
+.nav-list{
+    display: flex ;
+    list-style: none;
+    align-items: center;
+}
+
