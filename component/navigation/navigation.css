@@ -1,20 +1,64 @@
 .header-container{
-    background-color: var(--lynx-gray-color);
     display: flex;
     align-items: center;
-    padding: 0.8rem;
-}
+    padding: 1.6rem;
+    box-shadow: 0 4px 12px 0 rgb(0,0,0,0.2)
+    
 
-.header-search{
+}
+.search-container {
+    padding: 0;
+    display: flex;
     margin-left: auto;
-    min-width: 20rem;
+    min-width: 15rem;
     width: 40%;
 }
+
+  .search-container .btn-search {
+    width: 15%;
+    padding: 10px;
+    border: none;
+    border-right: none;
+    cursor: pointer;
+    outline: none;
+    min-width: 5rem;
+    color: var(--gray-color);
+  }
+  .search-container input[type="search"] {
+    padding: 10px;
+    border-radius: 0;
+    margin: 0;
+    border-left: none;
+    width: 90%;
+    min-width: 15rem;
+    
+  }
+
 .nav-container{
   margin-left: auto;
+
+}
+.nav-icon-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-icon-link .nav-icon-text{
+    margin-top: 10px;
+}
+.nav-icon-link .nav-icon{
+    width: 2rem;
+    height: 1.2rem;
+    color: var(--gray-color);
+  
+}
+.nav-icon-link .nav-icon:hover{
+    color: var(--primary-color);
 }
 .hamburger-menu{
     display: none;
+    color: var(--gray-color);
 }
 .nav-list{
     display: flex ;
@@ -22,3 +66,62 @@
     align-items: center;
 }
 
+@media screen and (max-width: 900px){
+
+    .hamburger-menu{
+        display: block;
+        padding: 0.8rem;
+        padding-right: 1.6rem;
+        /* background-color: red; */
+    }
+    .nav-icon-link .nav-icon-text{
+        display: none;
+    }
+    .nav-icon-link .nav-icon{
+        width: 2rem;
+        height: 2.4rem;
+        color: var(--gray-color);
+        
+      }
+    .search-container{
+        width: fit-content;
+        min-width: 0;
+    }
+    .search-container input[type="search"] {
+       display: none;
+        
+      }
+      .search-container .btn-search {
+        
+        background-color: transparent; 
+         padding: 0;
+         font-size: 1.6rem;
+      }
+      .nav-container{
+        margin-left: 0;
+      
+      }
+}
+
+@media screen and (max-width: 400px){
+   .header-container{
+       position: relative;
+   }
+    .hamburger-menu{
+        position: absolute;
+        right: 0;
+        
+    }
+    .nav-icon-link .nav-icon{
+      display: none; 
+    }
+    .search-container{
+        display: none;
+    }
+   
+      .search-container .btn-search {
+        
+        display: none;
+      }
+      
+}
