@@ -1,0 +1,23 @@
+.rating-container {
+  display: flex;
+  gap: 2rem;
+  color: var(--warning-color);
+}
+
+.number-rating {
+  background-color: var(--green);
+  color: var(--white-color);
+  width: fit-content;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.bg-rating-high {
+  background-color: var(--green);
+}
+.bg-rating-moderate {
+  background-color: var(--moderate-rating-color);
+}
+.bg-rating-low {
+  background-color: var(--danger-color);
+}
