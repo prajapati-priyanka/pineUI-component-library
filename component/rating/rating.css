@@ -16,7 +16,7 @@
   background-color: var(--green);
 }
 .bg-rating-moderate {
-  background-color: var(--moderate-rating-color);
+  background-color: var(--warning-color);
 }
 .bg-rating-low {
   background-color: var(--danger-color);
