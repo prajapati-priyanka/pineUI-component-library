@@ -1,0 +1,32 @@
+.two-col-grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    background-color: var(--white-color);
+    padding: 1rem;
+    border: 1px solid var(--black-color);
+    grid-gap: 0.5rem
+}
+
+.grid-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.two-col-grid-container .grid-heading {
+    font-size: calc(1.4rem + 1vw);
+}
+.two-col-grid-container .grid-sub-heading {
+    font-size: calc(1rem + 1vw);
+}
+.three-col-grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 1rem;
+   
+}
+.three-col-grid-container .card{
+    width: 20rem;
+}
+
