@@ -1,0 +1,25 @@
+.list{
+    border: 1px solid var(--black-color);
+    max-width: 30rem;
+    padding: 0.5rem 2rem;
+    margin: 2rem 0;
+}
+.list-title{
+    padding: 1.6rem;
+}
+.list li {
+    list-style: none;
+    padding: 1.6rem;
+}
+.list-stacked{
+    background-color: var(--white-color);
+    padding: 1.5rem 1rem ;
+}
+.list-stacked li{
+    background-color: var(--primary-color);
+    margin: 1rem 0rem;
+    padding: 1.2rem 2rem;
+    color: var(--white-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}

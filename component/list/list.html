@@ -10,7 +10,8 @@
     />
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
     <link rel="stylesheet" href="/css/components.css" />
-     <title>PineUI | Navigation</title>
+
+    <title>PineUI | List</title>
   </head>
 
   <body>
@@ -43,76 +44,64 @@
           <li><a class="md-text" href="../card/card.html">Card</a></li>
           <li><a class="md-text" href="../image/image.html">Image</a></li>
           <li><a class="md-text" href="../input/input.html">Input</a></li>
-          <li><a class="md-text" href="../typography/typography.html">Typography</a></li>
+          <li>
+            <a class="md-text" href="../typography/typography.html"
+              >Typography</a
+            >
+          </li>
           <li><a class="md-text" href="../modal/modal.html">Modal</a></li>
           <li><a class="md-text" href="../toast/toast.html">Toast</a></li>
-          <li><a class="acive md-text" href="../navigation/navigation.html">Navigation</a></li>
-          <li><a class="md-text" href="../list/list.html">List</a></li>
+          <li>
+            <a class="md-text" href="../navigation/navigation.html"
+              >Navigation</a
+            >
+          </li>
+          <li><a class="acive md-text" href="../list/list.html">List</a></li>
         </ul>
       </aside>
       <section class="comp-display-section">
         <article class="comp-desc">
-          <h1 class="comp-heading">Navigation</h1>
+          <h1 class="comp-heading">List</h1>
           <p class="comp-heading-desc lg-text">
-            Navigation bar allows user to naviagte to a certain section of the
-            websites.
+            A list can be used to display content related to a single subject.
+            The content can consist of multiple elements of varying type and
+            size.
           </p>
         </article>
 
         <article class="comp-desc">
-          <h2 class="comp-heading">Navigation Bar</h2>
-          <p class="comp-heading-desc lg-text">
-            This Navigation component is used for both Desktop and Mobile as it is fully responsive.It is a hamburger menu in
-            medium and small devices.
-          </p>
-
+          <h2 class="comp-heading">Spaced List</h2>
           <div class="component-code heading-container lg-text">
-            <header class="header-container">
-              <i class="fa fa-bars hamburger-menu"></i>
-              <h3 class="header-title">Pine UI</h3>
-              <form class="search-container">
-                <input
-                  type="search"
-                  placeholder="Type to search"
-                  class="input-search"
-                />
-                <button type="submit" class="btn-search">
-                  <i class="fa fa-search"></i>
-                </button>
-              </form>
+            <ul class="list list-spaced">
+              <h2 class="list-title">Categories</h2>
+              <li>Laptop</li>
+              <li>Watch</li>
+              <li>Mobile</li>
+              <li>Earpods</li>
+              <li>Speakers</li>
+            </ul>
 
-              <nav class="nav-container">
-                <ul class="nav-list md-text">
-                  <li class="list-inline-item">
-                    <a class="nav-icon-link link-no-style">
-                      <span class="nav-icon lg-text">
-                        <i class="fa fa-user"></i>
-                      </span>
-                      <span class="nav-icon-text md-text"> Profile </span>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="nav-icon-link link-no-style">
-                      <span class="nav-icon lg-text">
-                        <i class="fa fa-heart"></i>
-                      </span>
-                      <span class="nav-icon-text md-text"> Wishlist </span>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="nav-icon-link link-no-style">
-                      <span class="nav-icon lg-text">
-                        <i class="fa fa-shopping-cart"></i>
-                      </span>
-                      <span class="nav-icon-text md-text"> Cart </span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </header>
             <iframe
-              src="https://www.thiscodeworks.com/embed/6248b3bd8097fe0015b12c69"
-              style="width: 100%; height: 300px"
+              src="https://www.thiscodeworks.com/embed/625a5904826b060015494b0a"
+              style="width: 100%; height: 200px"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </article>
+
+        <article class="comp-desc">
+          <h2 class="comp-heading">Stacked List</h2>
+          <div class="component-code heading-container lg-text">
+            <ul class="list list-stacked">
+              <li>Notification 1</li>
+              <li>Notification 2</li>
+              <li>Notification 3</li>
+              <li>Notification 4</li>
+            </ul>
+
+            <iframe
+              src="https://www.thiscodeworks.com/embed/625a7723826b060015494b17"
+              style="width: 100%; height: 200px"
               frameborder="0"
             ></iframe>
           </div>
@@ -120,12 +109,12 @@
 
         <div class="page-bottom-nav">
           <div class="previous-page">
-            <a href="/component/toast/toast.html" class="md-text">
+            <a href="/component/navigation/navigation.html" class="md-text">
               <img
                 src="/assets/backward-arrow.svg"
                 class="footer-icon"
                 alt=""
-              />Toast</a
+              />Navigation</a
             >
           </div>
           <div class="next-page">
